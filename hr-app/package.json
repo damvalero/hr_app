@@ -1,0 +1,19 @@
+{
+  "name": "hr-app",
+  "version": "1.0.0",
+  "description": "MERN app",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server/server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.2"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

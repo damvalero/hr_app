@@ -1,0 +1,18 @@
+GET http://localhost:3000/employees
+
+###
+
+GET http://localhost:3000/employees/12
+
+
+###
+
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+    "name": "daniel",
+    "lastname": "mendes",
+    "age": "32",
+    "position": "frontend developer",
+}
