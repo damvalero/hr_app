@@ -28,13 +28,12 @@ const getEmployeeId = async (req, res, next) => {
     res.status(200).json(employee);
 }
 
-// create
+// create one
 const createEmployee = async (req, res) => {
+    const {name, lastname, age, position} = req.body;
+
     const createdEmployee = new Employee({
-        name: req.body.name,
-        lastname: req.body.lastname,
-        age: req.body.age,
-        position: req.body.position,
+        name, lastname, age , position
     })
     try {
         const newEmployee = await createdEmployee.save();

@@ -21,7 +21,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/employees/61d36a00868bf1673c8cb56f
 
 ###
-PATCH http://localhost:3000/employees/61d2fba61d68bae24a9b88f8
+PUT http://localhost:3000/employees/61d2fba61d68bae24a9b88f8
 Content-Type: application/json
 
 {
