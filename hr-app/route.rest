@@ -2,7 +2,7 @@ GET http://localhost:3000/employees
 
 ###
 
-GET http://localhost:3000/employees/12
+GET http://localhost:3000/employees/61d2fba61d68bae24a9b88f8
 
 
 ###
@@ -14,5 +14,16 @@ Content-Type: application/json
     "name": "daniel",
     "lastname": "mendes",
     "age": "32",
-    "position": "frontend developer",
+    "position": "frontend",
+}
+
+###
+DELETE http://localhost:3000/employees/61d36a00868bf1673c8cb56f
+
+###
+PATCH http://localhost:3000/employees/61d2fba61d68bae24a9b88f8
+Content-Type: application/json
+
+{
+    "age": "100"
 }
