@@ -1,0 +1,39 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ------------colors------------ */
+  --clr-text: #445566;
+  --clr-main: #054ACA;
+  --clr-border: #0984E3;
+  /* ------------font size------------ */
+  /*--font-big: 2rem; /*32px*/
+  --font-title: 1.75rem; /*28px*/
+  --font-subtitle: 1.25rem; /*20px*/
+  --font-text: 1.125rem; /*18px*/
+  --font-nav: 1rem; /*16px*/
+}
+
+.title-site {
+  color: var( --clr-main);
+  font-size: var( --font-title);
+  text-align: center;
+  margin-top: 1rem;
+}
+.text-message{
+  color: var(--text);
+  font-size: var(--font-subtitle);
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
