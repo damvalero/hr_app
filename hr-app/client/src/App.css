@@ -23,7 +23,7 @@
   color: var( --clr-main);
   font-size: var( --font-title);
   text-align: center;
-  margin-top: 1rem;
+  margin-bottom: 3rem;
 }
 .text-message{
   color: var(--text);
@@ -36,4 +36,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.page-margin {
+  margin: 3%;
 }

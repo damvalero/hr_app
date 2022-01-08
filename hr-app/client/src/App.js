@@ -17,7 +17,55 @@ const App = () => {
     name: "Mary",
     lastname: "Bruger",
     position: "Designer"
-  }];
+  },
+  {
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },
+  {
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },
+  {
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },{
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },{
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },
+  {
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },
+  {
+    id: "e2",
+    image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+    name: "Annarita",
+    lastname: "Smith",
+    position: "Human Resources"
+  },
+];
   return (
     <Router>
       <Switch>
