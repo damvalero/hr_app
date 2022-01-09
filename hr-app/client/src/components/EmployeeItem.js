@@ -21,7 +21,7 @@ const EmployeeItem = (props) => {
             <div className='card-buttons'>
                 
                 <a href className='edit-icon'>
-                    <FontAwesomeIcon className='icontest' size='lg' icon={faEdit} />
+                    <FontAwesomeIcon size='lg' icon={faEdit} />
                 </a>
                 <button className='delete-icon'>
                     <FontAwesomeIcon size='lg' icon={faTimes} />

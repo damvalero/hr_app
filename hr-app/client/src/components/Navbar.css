@@ -1,0 +1,23 @@
+
+.nav-menu {
+    background-color: var(--clr-main);
+    /* display: none; */
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    left: -100%;
+    transition: 850ms;
+}
+
+.nav-menu .active{
+    /* display: block; */
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: var(--font-nav);
+}
