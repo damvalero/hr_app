@@ -18,7 +18,8 @@ const EmployeesPage = (props) => {
             <ul className='employee-list'>
                 {props.items.map(employee => {
                     return <EmployeeItem
-                        key={employee.id}
+                    
+                        id={employee.id}
                         image={employee.image}
                         name={employee.name}
                         lastname={employee.lastname}

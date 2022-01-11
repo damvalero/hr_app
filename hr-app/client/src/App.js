@@ -28,40 +28,40 @@ const App = () => {
     position: "Human Resources"
   },
   {
-    id: "e2",
+    id: "e23",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Annarita",
     lastname: "Smith",
     position: "Human Resources"
   },
   {
-    id: "e2",
+    id: "e4",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Annarita",
     lastname: "Smith",
     position: "Human Resources"
   }, {
-    id: "e2",
+    id: "e25",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Annarita",
     lastname: "Smith",
     position: "Human Resources"
   }, {
-    id: "e2",
+    id: "e26",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Annarita",
     lastname: "Smith",
     position: "Human Resources"
   },
   {
-    id: "e2",
+    id: "e27",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Annarita",
     lastname: "Smith",
     position: "Human Resources"
   },
   {
-    id: "e2",
+    id: "e28",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Annarita",
     lastname: "Smith",
@@ -72,13 +72,13 @@ const App = () => {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/" >
+        <Route path="/" exact>
           <EmployeesPage items={DUMMY_EMPLOYEES} />
         </Route>
-        <Route path="employees/new">
+        <Route path="/employees/new" exact>
           <NewEmployee />
         </Route >
-        <Route path="employees/teams">
+        <Route path="/employees/teams" exact>
           <TeamPage />
         </Route >
         <Redirect to="/" />

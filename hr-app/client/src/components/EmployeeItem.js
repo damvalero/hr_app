@@ -7,7 +7,7 @@ import "./EmployeeItem.css";
 
 const EmployeeItem = (props) => {
     return (
-        <li className='card-container'>
+        <li key={`${props.id}${props.name}`} className='card-container'>
             <div className='card-img'>
                 <img src={props.image} alt={props.name} />
             </div>
@@ -20,7 +20,7 @@ const EmployeeItem = (props) => {
             </div>
             <div className='card-buttons'>
                 
-                <a href className='edit-icon'>
+                <a href='/employee/edit' className='edit-icon'>
                     <FontAwesomeIcon size='lg' icon={faEdit} />
                 </a>
                 <button className='delete-icon'>

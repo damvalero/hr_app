@@ -10,12 +10,12 @@ export const SidebarData = [
     },
     {
         option: 'Add Colleague',
-        path: 'employees/new',
+        path: '/employees/new',
         icon: <FontAwesomeIcon icon={faUserPlus} />
     },
     {
         option: 'Teams',
-        path: 'employees/teams',
+        path: '/employees/teams',
         icon: <FontAwesomeIcon icon={faSitemap} />
     },
 ]

@@ -1,12 +1,11 @@
 import React from 'react'
 
-
-const TeamsPage = props => {
+const EditPage = () => {
     return (
         <div className='center'>
-            Team page
+            This is the page for edit
         </div>
     )
 }
 
-export default TeamsPage
+export default EditPage;
