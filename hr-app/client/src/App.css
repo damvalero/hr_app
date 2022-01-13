@@ -32,7 +32,7 @@
   font-weight: 600;
 }
 
-.center {
+.align-title {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -41,4 +41,13 @@
 
 .page-margin {
   margin: 3%;
+}
+
+.page-space {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -8,7 +8,7 @@ import {
 
 import Navbar from './components/Navbar';
 import EmployeesPage from './pages/EmployeesPage';
-import NewEmployee from './components/NewEmployee';
+import NewEmployeePage from './pages/NewEmployeePage';
 import TeamPage from './pages/TeamsPage';
 import './App.css';
 
@@ -76,7 +76,7 @@ const App = () => {
           <EmployeesPage items={DUMMY_EMPLOYEES} />
         </Route>
         <Route path="/employees/new" exact>
-          <NewEmployee />
+          <NewEmployeePage />
         </Route >
         <Route path="/employees/teams" exact>
           <TeamPage />

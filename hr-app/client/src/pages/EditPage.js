@@ -2,7 +2,7 @@ import React from 'react'
 
 const EditPage = () => {
     return (
-        <div className='center'>
+        <div className='margin-page align-title'>
             This is the page for edit
         </div>
     )

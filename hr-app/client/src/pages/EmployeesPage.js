@@ -6,7 +6,7 @@ import "./EmployeesPage.css";
 const EmployeesPage = (props) => {
     if (props.items.length === 0) {
         return (
-            <div className='page-margin center'>
+            <div className='page-margin align-title'>
                 <p className='text-message'>Start to fill your database.</p>
             </div>
         )
