@@ -27,6 +27,13 @@ input {
     font-size: var(--font-text);
 }
 
+.form-error {
+    color:  var(--clr-error);
+    margin-bottom: 10px;
+    font-size: var(--font-nav);
+    text-align: left;
+}
+
 .btn-submit {
     border: none;
     padding: 10px;

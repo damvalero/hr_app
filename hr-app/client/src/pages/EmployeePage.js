@@ -1,20 +1,8 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch
-} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
-import Navbar from './components/Navbar';
-import EmployeesPage from './pages/EmployeesPage';
-import NewEmployeePage from './pages/NewEmployeePage';
-import TeamPage from './pages/TeamsPage';
-import EmployeePage from './pages/EmployeePage';
-import './App.css';
 
-const App = () => {
-  const DUMMY_EMPLOYEES = [{
+const DUMMY_EMPLOYEES = [{
     id: "e1",
     image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
     name: "Mary",
@@ -69,26 +57,25 @@ const App = () => {
     position: "Human Resources"
   },
   ];
-  return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route path="/" exact>
-          <EmployeesPage items={DUMMY_EMPLOYEES} />
-        </Route>
-        <Route path="/employees/new" exact>
-          <NewEmployeePage />
-        </Route >
-        <Route path="/employees/teams" exact>
-          <TeamPage />
-        </Route >
-        <Route path="/employees/:id" exact>
-          <EmployeePage />
-        </Route >
-        <Redirect to="/" />
-      </Switch>
-    </Router>
-  )
+
+const EmployeePage = () => {
+    const employeeId = useParams().id;
+
+    const identifiedEmployee = DUMMY_EMPLOYEES.find(item => item.id === employeeId);
+
+    if (!identifiedEmployee) {
+        return(
+            <div>
+                <p>Could not find employee!</p>
+            </div>
+        )
+    }
+
+    return (
+        <div className='center'>
+            HERE IS TO EDIT EMPLOYEE
+        </div>
+    )
 }
 
-export default App;
+export default EmployeePage;
