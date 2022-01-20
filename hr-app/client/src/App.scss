@@ -44,6 +44,10 @@
   margin: 3%;
 }
 
+.margin-bottom {
+  margin-bottom: 3%;
+}
+
 .page-space {
   height: 100vh;
   text-align: center;
@@ -51,4 +55,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.page-vertical-space {
+  height: 100vh;
+  display: grid;
+  padding: 2rem 1rem;
 }
