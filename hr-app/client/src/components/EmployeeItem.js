@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEdit, faTimes } from '@fortawesome/free-solid-svg-icons'
 
-import "./EmployeeItem.css";
+import "./EmployeeItem.scss";
 
 
 const EmployeeItem = (props) => {
     return (
-        <li key={`${props.id}${props.name}`} className='card-container'>
+        <li key={`${props.id}${props.firstname}`} className='card-container'>
             <div className='card-img'>
                 <img src={props.image} alt={props.name} />
             </div>
             <div className='card-text'>
                 <Link to={`/employees/${props.id}`}>
                     <div className='card-name'>
-                        <p>{props.name}</p>
+                        <p>{props.firstname}</p>
                         <p>{props.lastname}</p>
                     </div>
                 </Link>

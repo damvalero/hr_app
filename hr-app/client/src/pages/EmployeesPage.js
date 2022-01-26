@@ -1,7 +1,7 @@
 import React from 'react';
 
 import EmployeeItem from '../components/EmployeeItem';
-import "./EmployeesPage.css";
+import "./EmployeesPage.scss";
 
 const EmployeesPage = (props) => {
     if (props.items.length === 0) {
@@ -18,10 +18,9 @@ const EmployeesPage = (props) => {
             <ul className='employee-list'>
                 {props.items.map(employee => {
                     return <EmployeeItem
-                    
                         id={employee.id}
                         image={employee.image}
-                        name={employee.name}
+                        firstname={employee.firstname}
                         lastname={employee.lastname}
                         position={employee.position}
                     />

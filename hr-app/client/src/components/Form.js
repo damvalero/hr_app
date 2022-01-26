@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+// import { useForm } from 'react-hook-form';
 
-import './Form.css';
+import './Form.scss';
 
-const Form = () => {
+const Form = (props) => {
     // const { register, handleSubmit, formState: { errors } } = useForm({
     //     defaultValues: {
     //         firstname: "",
@@ -21,10 +21,23 @@ const Form = () => {
         setEnteredText({ ...enteredText, [e.target.name]: e.target.value })
     }
 
-    const onSubmit = (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
         
-        // console.log("data", data)
+        const newEmployee = {
+            id: Math.random(),
+            image: "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
+            firstname: enteredText.firstname,
+            lastname: enteredText.lastname,
+            age: enteredText.age,
+            position: enteredText.position
+        };
+
+        setEnteredText({
+            firstname: "", lastname: "", age: "", position: ""
+        })
+
+        props.onAddEmployee(newEmployee);
     }
 
     console.log(enteredText)
@@ -32,7 +45,7 @@ const Form = () => {
     return (
         <form className='form-container'
             // onSubmit={handleSubmit(onSubmit)}
-            onSubmit={onSubmit}
+            onSubmit={handleSubmit}
         >
             <h1 className='align-title form-title'>Add Coworker</h1>
             <div className='inputs-container'>
@@ -51,7 +64,6 @@ const Form = () => {
                     className='form-input'
                     value={enteredText.lastname}
                     onChange={handleChange}
-
                 // {...register("lastname", { required: true })}
                 />
                 {/* {errors.lastname?.type === "required" && <p className='form-error'>*Lastname is required</p>} */}
@@ -66,7 +78,6 @@ const Form = () => {
                     className='form-input'
                     value={enteredText.age}
                     onChange={handleChange}
-
                 // {...register("age", { required: true })}
                 />
                 {/* {errors.age?.type === "required" && <p className='form-error'>*Age is required</p>} */}
@@ -76,7 +87,6 @@ const Form = () => {
                     className='form-input'
                     value={enteredText.position}
                     onChange={handleChange}
-
                 // {...register("position", { required: true })}
                 />
                 {/* {errors.position?.type === "required" && <p className='form-error'>*Position is required</p>} */}

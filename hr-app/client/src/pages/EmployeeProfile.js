@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-import './EmployeeProfile.css';
+import './EmployeeProfile.scss';
 
 const DUMMY_EMPLOYEES = [{
   id: "e1",
