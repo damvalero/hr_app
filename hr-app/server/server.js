@@ -13,7 +13,10 @@ app.use(express.urlencoded({extended: true}));
 // this line substitude bodyParser, express already does that
 app.use(express.json());
 
+// Routes
 const employeesRouter = require('./routes/employees-routes.js');
-// the url will be localhost:300/employes
+
+// app will go to the routes
 app.use('/employees', employeesRouter);
-app.listen(3000, ()=> console.log('Server started'));
+// the url will be localhost:3001/employes
+app.listen(3001, ()=> console.log('Server started in 3001'));
