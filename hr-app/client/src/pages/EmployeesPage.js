@@ -7,20 +7,29 @@ const EmployeesPage = (props) => {
     if (props.items.length === 0) {
         return (
             <div className='page-margin align-title'>
-                <p className='text-message'>Start to fill your database.</p>
+                <div className='page-space'>
+                    <p className='text-message'>Start to fill your database.</p>
+                </div>
             </div>
         )
     }
 
+    // This send the info to Appjs to update the state employees
+    const deleteDataToParent = (deleteId) => {
+        props.deleteEmployee(deleteId);
+    }
+
     return (
         <div className='page-margin'>
-            <h1 className='title-site'>Say Hi to all your coworkes</h1>
+            <h1 className='title-site'>HR Database</h1>
             <ul className='employee-list'>
                 {props.items.map(employee => {
                     return <EmployeeItem
-                        id={employee.id}
+                        deleteDataToParent={deleteDataToParent}
+                        key={`${props.id}${employee.name}`}
+                        id={employee._id}
                         image={employee.image}
-                        firstname={employee.firstname}
+                        name={employee.name}
                         lastname={employee.lastname}
                         position={employee.position}
                     />

@@ -1,0 +1,28 @@
+.btn-form-image {
+    padding: 5px 10px;
+    border: 2px solid var(--clr-border);
+    border-radius: 20px;
+    color: var(--clr-border);
+    background-color: var(--clr-white-basic);
+    font-size: var(--font-little);
+    font-weight: 600;
+    &:active {
+        transform: scale(0.95);
+        transition-duration: 200ms;
+    }
+}
+
+.btn-submit {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: var(--clr-border);
+    color: var(--clr-white);
+    font-size: var(--font-text);
+    &:active {
+        transform: scale(0.95);
+        transition-duration: 200ms;
+    }
+}

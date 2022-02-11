@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSitemap, faUserPlus, faUsers, } from '@fortawesome/free-solid-svg-icons'
+import { faUserPlus, faUsers, } from '@fortawesome/free-solid-svg-icons'
 
 export const SidebarData = [
     {
@@ -13,9 +13,9 @@ export const SidebarData = [
         path: '/employees/new',
         icon: <FontAwesomeIcon icon={faUserPlus} />
     },
-    {
-        option: 'Teams',
-        path: '/employees/teams',
-        icon: <FontAwesomeIcon icon={faSitemap} />
-    },
+    // {
+    //     option: 'Teams',
+    //     path: '/employees/teams',
+    //     icon: <FontAwesomeIcon icon={faSitemap} />
+    // },
 ]

@@ -2,7 +2,7 @@
     {
         "id": "e1",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Mary",
+        "name": "Mary",
         "lastname": "Bruger",
         "age": "30",
         "position": "Designer"
@@ -10,7 +10,7 @@
     {
         "id": "e2",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Annarita",
+        "name": "Annarita",
         "lastname": "Smith",
         "age": "26",
         "position": "Human Resources"
@@ -18,7 +18,7 @@
     {
         "id": "e23",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Pedro",
+        "name": "Pedro",
         "lastname": "Smith",
         "age": "34",
         "position": "Human Resources"
@@ -26,7 +26,7 @@
     {
         "id": "e4",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Vanessa",
+        "name": "Vanessa",
         "lastname": "Smith",
         "age": "31",
         "position": "Human Resources"
@@ -34,7 +34,7 @@
     {
         "id": "e25",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Manuel",
+        "name": "Manuel",
         "lastname": "Smith",
         "age": "45",
         "position": "Human Resources"
@@ -42,7 +42,7 @@
     {
         "id": "e26",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Daniel",
+        "name": "Daniel",
         "lastname": "Smith",
         "age": "40",
         "position": "Human Resources"
@@ -50,7 +50,7 @@
     {
         "id": "e27",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Maria",
+        "name": "Maria",
         "lastname": "Smith",
         "age": "30",
         "position": "Human Resources"
@@ -58,7 +58,7 @@
     {
         "id": "e28",
         "image": "https://cdn.thezebra.com/zfront/media/production/images/Jenn_1.59827405.fill-380x380.jpg",
-        "firstname": "Carolina",
+        "name": "Carolina",
         "lastname": "Smith",
         "age": "34",
         "position": "Human Resources"

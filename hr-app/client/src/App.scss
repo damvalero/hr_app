@@ -9,25 +9,28 @@
 :root {
   /* ------------colors------------ */
   --clr-text: #445566;
-  --clr-main: #054ACA;
-  --clr-border: #0984E3;
+  --clr-main: #054aca;
+  --clr-border: #0984e3;
   --clr-white: #f5f5f5;
+  --clr-white-basic: #ffffff;
   --clr-error: #e84118;
+  --clr-orange: #fcae1e;
   /* ------------font size------------ */
   /*--font-big: 2rem; /*32px*/
   --font-title: 1.75rem; /*28px*/
   --font-subtitle: 1.25rem; /*20px*/
   --font-text: 1.125rem; /*18px*/
   --font-nav: 1rem; /*16px*/
+  --font-little: 0.875rem /*14px*/
 }
 
 .title-site {
-  color: var( --clr-main);
-  font-size: var( --font-title);
+  color: var(--clr-main);
+  font-size: var(--font-title);
   text-align: center;
   margin-bottom: 3rem;
 }
-.text-message{
+.text-message {
   color: var(--text);
   font-size: var(--font-subtitle);
   font-weight: 600;
@@ -50,7 +53,7 @@
 
 .page-space {
   height: 100vh;
-  text-align: center;
+  // text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,3 +65,41 @@
   display: grid;
   padding: 2rem 1rem;
 }
+
+// --------------------Loading animation------------
+.loading {
+  margin: 0 auto;
+  width: 70px;
+  text-align: center;
+  .loading-dot-1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+  }
+  .loading-dot-2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+  }
+}
+.loading > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s ease-in-out infinite both;
+  animation: sk-bouncedelay 1.4s ease-in-out infinite both;
+}
+
+@keyframes sk-bouncedelay {
+  0%,
+  80%,
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+// -------------------------------

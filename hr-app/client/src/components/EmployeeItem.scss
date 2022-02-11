@@ -1,32 +1,26 @@
 .card-container {
-    display: grid;
-    /* grid-template-columns: 220px; */
-    grid-template-rows: 180px 80px 70px;
-    grid-template-areas: "image" "text" "buttons";
+    display: inline-block;
+    padding: 1rem;
+    width: 100%;
     border-radius: 18px;
+    border: solid 5px white;
     background-color: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 2px 2px 16px rgba(0,0,0,0.9);
     text-align: center;
+    transition: transform .3s;
 }
 
-.card-img {
-    grid-area: image;
+.card-container:hover {
+    border: solid 5px var(--clr-main);;
+    transform:  translateY(5px);
 }
+
 .card-img img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-}
-
-.card-text {
-    grid-area: text;
-    /* text-align: justify; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .card-text a {
@@ -55,11 +49,10 @@
     margin-top: 10px;
 }
 .card-buttons {
-    grid-area: buttons;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 10px;
+    margin-top: 1rem;
 } 
 
 .edit-icon {
@@ -88,8 +81,6 @@
     border: solid 2px #DF362D;
     color: #DF362D;
     cursor: pointer;
-    cursor: pointer;
-
 }
 
 .delete-icon:hover{
@@ -97,12 +88,8 @@
     background-color: #DF362D;
 }
 
-@media screen and (max-width: 768px) {
-    .card-container {
-        grid-template-rows: 180px 80px;
-        grid-template-areas: "image" "text";
-    }
-    .card-buttons {
-        display: none;
-    } 
-}
+// @media screen and (max-width: 768px) {
+//     .card-buttons {
+//         display: none;
+//     } 
+// }
