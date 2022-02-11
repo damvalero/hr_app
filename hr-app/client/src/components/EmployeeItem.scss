@@ -5,14 +5,14 @@
     border-radius: 18px;
     border: solid 5px white;
     background-color: white;
-    box-shadow: 2px 2px 16px rgba(0,0,0,0.9);
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.9);
     text-align: center;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .card-container:hover {
-    border: solid 5px var(--clr-main);;
-    transform:  translateY(5px);
+    border: solid 5px var(--clr-main);
+    transform: translateY(5px);
 }
 
 .card-img img {
@@ -27,12 +27,13 @@
     text-decoration: none;
 }
 
-.card-name{
+.card-name {
     cursor: pointer;
 }
 
-.card-name p{
+.card-name p {
     display: inline;
+    text-transform: capitalize;
     color: var(--clr-main);
     font-size: var(--font-subtitle);
     font-weight: 600;
@@ -40,6 +41,7 @@
 
 .card-name p:last-child {
     margin-left: 6px;
+    text-transform: capitalize;
 }
 
 .card-position {
@@ -47,13 +49,14 @@
     font-size: var(--font-text);
     font-weight: 600;
     margin-top: 10px;
+    text-transform: capitalize;
 }
 .card-buttons {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 1rem;
-} 
+}
 
 .edit-icon {
     width: 45px;
@@ -78,18 +81,18 @@
     width: 45px;
     height: 45px;
     border-radius: 50%;
-    border: solid 2px #DF362D;
-    color: #DF362D;
+    border: solid 2px #df362d;
+    color: #df362d;
     cursor: pointer;
 }
 
-.delete-icon:hover{
+.delete-icon:hover {
     color: white;
-    background-color: #DF362D;
+    background-color: #df362d;
 }
 
 // @media screen and (max-width: 768px) {
 //     .card-buttons {
 //         display: none;
-//     } 
+//     }
 // }

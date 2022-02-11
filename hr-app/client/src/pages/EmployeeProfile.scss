@@ -21,6 +21,7 @@
     .profile-title {
         color: var(--clr-white);
         margin-bottom: 1rem;
+        text-transform: capitalize;
     }
     .img-side {
         width: 50%;
@@ -57,9 +58,9 @@
     }
 
     .position-info {
-        // padding-top: 1rem;
         color: var(--clr-white);
         font-size: var(--font-title);
+        text-transform: capitalize;
     }
 }
 
@@ -87,11 +88,17 @@
         & .profile-icon {
             color: var(--clr-orange);
         }
+        & p {
+            text-transform: capitalize;
+        }
     }
     .professional-info {
         background-color: var(--clr-border);
         & .profile-icon {
             color: var(--clr-border);
+        }
+        & p {
+            text-transform: capitalize;
         }
     }
     .profile-icon {
@@ -145,7 +152,7 @@
     .profile-background {
         border-radius: 20px;
     }
- 
+
     .personal-info,
     .profesional-info {
         width: 100%;
@@ -153,7 +160,6 @@
 }
 
 @media screen and (max-width: 576px) {
-
     .upper-info {
         margin-top: 1rem;
         margin-bottom: 1rem;
