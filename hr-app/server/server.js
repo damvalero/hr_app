@@ -19,4 +19,4 @@ const employeesRouter = require('./routes/employees-routes.js');
 // app will go to the routes
 app.use('/employees', employeesRouter);
 // the url will be localhost:3001/employes
-app.listen(3001, ()=> console.log('Server started in 3001'));
+app.listen(process.env.PORT, ()=> console.log('Server started'));
