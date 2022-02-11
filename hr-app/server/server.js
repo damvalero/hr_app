@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.nawqx.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`)
 const db= mongoose.connection;
 db.on('error', (error) => console.log(error));
 db.once('open', ()=> console.log('Connected to database'));
