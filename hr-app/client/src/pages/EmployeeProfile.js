@@ -17,7 +17,6 @@ const EmployeeProfile = () => {
     async function searchEmployee() {
       try {
         const { data: employee } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/employees/${employeeId}`);
-        console.log('que es data', employee)
         settEmployee(employee)
         setChargingData(false);
       } catch (error) {
