@@ -20,7 +20,7 @@ const App = () => {
   const [chargingData, setChargingData] = useState(true);
 
   const getData = () => {
-    axios.get('/employees')
+    axios.get(process.env.REACT_APP_BACKEND_URL + '/employees')
       .then((res) => {
         const allEmployees = res.data.employees;
         setEmployees(allEmployees);
@@ -36,7 +36,7 @@ const App = () => {
   }
 
   const addEmployee = (newEmployee) => {
-    axios.post('/employees', newEmployee)
+    axios.post(process.env.REACT_APP_BACKEND_URL + '/employees', newEmployee)
       .then((res) => {
         setEmployees([...employees, res.data.employee])
       })

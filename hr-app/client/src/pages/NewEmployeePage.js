@@ -228,7 +228,6 @@ const NewEmployeePage = (props) => {
             setShowError(true)
         } else {
             const newEmployee = {
-                // id: Math.random(),
                 name: state.name.value,
                 lastname: state.lastname.value,
                 age: state.age.value,
@@ -252,8 +251,6 @@ const NewEmployeePage = (props) => {
             // formData.append('image', state.image.value);
 
             const restartForm = { type: RESTART_FORM }
-
-            // console.log("que muestra dispatch", dispatch(restartForm));
 
             dispatch(restartForm)
 

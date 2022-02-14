@@ -221,7 +221,7 @@ const UpdateEmployeePage = (props) => {
 
   const sendUpdatedData = async (updatedEmployee) => {
     try {
-      await axios.put(`/employees/${employeeId}`, updatedEmployee);
+      await axios.put(process.env.REACT_APP_BACKEND_URL + `/employees/${employeeId}`, updatedEmployee);
     } catch (error) {
       if (error.response.status === 404 || error.response.status === 400) {
         setEmployeeDoesntExist(true);
