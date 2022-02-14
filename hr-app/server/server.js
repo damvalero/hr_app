@@ -15,14 +15,16 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 //to make work the heroku deploy
-app.use(express.static(path.join('public')))
+// app.use(express.static(path.join('public')))
+app.use(express.static(path.resolve(__dirname, "./client/build")));
 
 // Routes
 const employeesRouter = require('./routes/employees-routes.js');
 
 // passing build folder of the client to the public in server
 app.use((req, res, next) => {
-    res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+    // res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+    response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 })
 
 // app will go to the routes
