@@ -239,7 +239,7 @@ const UpdateEmployeePage = (props) => {
   useEffect(() => {
     async function searchEmployee() {
       try {
-        const { data: employee } = await axios.get(`/employees/${employeeId}`);
+        const { data: employee } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/employees/${employeeId}`);
         setName(employee.name);
         setLastname(employee.lastname);
         setAge(employee.age);
