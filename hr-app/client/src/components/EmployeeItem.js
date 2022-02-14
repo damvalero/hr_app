@@ -13,7 +13,7 @@ const EmployeeItem = (props) => {
         e.preventDefault();
 
         const deleteId = props.id
-        axios.delete(process.env.REACT_APP_BACKEND_URL + `employees/${deleteId}`)
+        axios.delete(`${process.env.REACT_APP_BACKEND_URL}/employees/${deleteId}`)
             .then(res => {
                 props.deleteDataToParent(deleteId);
             })
