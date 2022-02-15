@@ -4,7 +4,7 @@ import EmployeeItem from '../components/EmployeeItem';
 import "./EmployeesPage.scss";
 
 const EmployeesPage = (props) => {
-    if (props.items.length === 0) {
+    if (props.items.length === 0 && !props.isCharging ) {
         return (
             <div className='page-margin align-title'>
                 <div className='page-space'>

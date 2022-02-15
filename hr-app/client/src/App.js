@@ -24,6 +24,7 @@ const App = () => {
       .then((res) => {
         const allEmployees = res.data.employees;
         setEmployees(allEmployees);
+        setChargingData(false);
       })
       .catch(error => { console.log("the error is ", error) })
   }
@@ -48,7 +49,6 @@ const App = () => {
 
   useEffect(() => {
     getData();
-    setChargingData(false);
   }, [])
 
   if (chargingData) {
@@ -66,7 +66,7 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact>
-          <EmployeesPage items={employees} deleteEmployee={deleteEmployee} />
+          <EmployeesPage items={employees} isCharging={chargingData} deleteEmployee={deleteEmployee} />
         </Route>
         <Route path="/employees/new" exact>
           <NewEmployeePage onAddEmployee={addEmployee} />
