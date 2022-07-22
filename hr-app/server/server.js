@@ -1,4 +1,5 @@
-require('dotenv').config();
+// this require is only for local
+// require('dotenv').config();
 
 const express = require('express');
 const app = express();
